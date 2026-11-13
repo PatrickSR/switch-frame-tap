@@ -44,6 +44,8 @@ the viewer on your PC, start a game.
 - **Screen off while streaming**, to save battery when you play on the PC.
 - **A Switch app and an overlay** for every setting, so you never have to edit
   files.
+- **An iOS app** (`ios/`): iPhone streaming over the network with a touch
+  gamepad, over a Tailscale route from a home Mac.
 
 ## What you need
 
@@ -1010,6 +1012,7 @@ dock works over the network since v0.7.0, with the quality adapting to the link.
 | `manager/` | The Switch app for the homebrew menu (SDL2; `ui.hpp` its look): settings, status, setup check, screenshot gallery, Get extras, updates. |
 | `overlay/` | The Tesla/Ultrahand overlay: stream on/off, status, the beta switches, handheld/docked through ReverseNX-RT. |
 | `android-tv/` | The Android / Android TV viewer (didix16), Java, built by CI. |
+| `ios/` | The iOS viewer (`SFTap`, iPhone, iOS 17+) and `SFTCore`, the shared Swift protocol library it builds on. |
 | `common/` | Shared by the Switch side and the viewers: `config.ini` access, the sound patches switch, the version order the updaters use (`sft_version.h`). |
 | `flatpak/` | The Flatpak manifest for the Linux viewer. |
 | `tools/` | `make_release.sh` (the release zip), `manager-preview/` (the Switch app's screens on a PC), and PC-side analysis and self-tests: `sft_tool.py`, `nvframe_check.py`, `nvp_check.py`, `vic_csc.py`, `nvenc_replay.py`, `nvrec.py`. |

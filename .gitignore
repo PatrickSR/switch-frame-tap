@@ -23,3 +23,10 @@ dist/
 tools/raw-recv/clarity.o
 tools/raw-recv/clarity_shader.h
 *.nro
+
+# iOS app (ios/)
+ios/**/xcuserdata/
+ios/SFTCore/.build/
+ios/SFTCore/.swiftpm/
+ios/SFTap/Config/Signing.local.xcconfig
+*.xcodeproj/project.xcworkspace/xcuserdata/
